@@ -12,7 +12,7 @@ Author URI: https://felipels.com/
 */
 
 
-function hide_collapse_button() { echo "
+function fcam_hide_collapse_button() { echo "
 
 <style>
 
@@ -24,9 +24,9 @@ function hide_collapse_button() { echo "
 
 "; }
 
-add_action('admin_head', 'hide_collapse_button');
+add_action('admin_head', 'fcam_hide_collapse_button');
 
-function collapse_menu() { echo "
+function fcam_collapse_menu() { echo "
 
 <script type='text/javascript' > 
 
@@ -36,9 +36,9 @@ document.body.classList.add('folded');
 
 "; }
 
-add_action('admin_footer', 'collapse_menu');
+add_action('admin_footer', 'fcam_collapse_menu');
 
-function plugin_deactivation() { echo "
+function fcam_plugin_deactivation() { echo "
 
 <script type='text/javascript' > 
 
@@ -48,4 +48,4 @@ document.body.classList.remove('folded');
 
 "; }
 
-register_deactivation_hook( __FILE__, 'plugin_deactivation' );
+register_deactivation_hook( __FILE__, 'fcam_plugin_deactivation' );
