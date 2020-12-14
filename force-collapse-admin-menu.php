@@ -11,7 +11,11 @@ Version: 1.0.0
 Author URI: https://felipels.com/
 */
 
-
+/**
+ * Hide the collapse icon on the wp-admin navigation menu.
+ *
+ * @return void
+ */
 function fcam_hide_collapse_button() { echo "
 
 <style>
@@ -25,7 +29,11 @@ function fcam_hide_collapse_button() { echo "
 "; }
 
 add_action('admin_head', 'fcam_hide_collapse_button');
-
+/**
+ * Add native WP 'folded' class on body that collapses the menu.
+ *
+ * @return void
+ */
 function fcam_collapse_menu() { echo "
 
 <script type='text/javascript' > 
