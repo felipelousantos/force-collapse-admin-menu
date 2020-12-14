@@ -1,15 +1,13 @@
 <?php
 /**
- * @package Force Collapse Admin Menu
- * @version 1.0.0
+ * Plugin Name:     Force Collapse Admin Menu
+ * Description:     This plugin collapses the admin menu and doesn't allow expanding it back.
+ * Author:          Felipe Santos
+ * Text Domain:     force-collapse-admin-menu
+ * Version:         1.0.1
+ *
+ * @package         Force Collapse Admin Menu
  */
-/*
-Plugin Name: Force Collapse Admin Menu
-Description: This plugin collapses the admin menu and doesn't allow expanding it back.
-Author: Felipe Santos
-Version: 1.0.0
-Author URI: https://felipels.com/
-*/
 
 /**
  * Hide the collapse icon on the wp-admin navigation menu.
@@ -20,15 +18,16 @@ function fcam_hide_collapse_button() { echo "
 
 <style>
 
-#collapse-button {
-	display: none !important;
-} 
+	#collapse-button {
+		display: none !important;
+	} 
 
 </style>
 
 "; }
 
 add_action('admin_head', 'fcam_hide_collapse_button');
+
 /**
  * Add native WP 'folded' class on body that collapses the menu.
  *
@@ -38,7 +37,7 @@ function fcam_collapse_menu() { echo "
 
 <script type='text/javascript' > 
 
-document.body.classList.add('folded');
+	document.body.classList.add('folded');
 
 </script>
 
