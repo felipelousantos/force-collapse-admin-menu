@@ -37,15 +37,3 @@ document.body.classList.add('folded');
 "; }
 
 add_action('admin_footer', 'fcam_collapse_menu');
-
-function fcam_plugin_deactivation() { echo "
-
-<script type='text/javascript' > 
-
-document.body.classList.remove('folded');
-
-</script>
-
-"; }
-
-register_deactivation_hook( __FILE__, 'fcam_plugin_deactivation' );
