@@ -4,7 +4,7 @@
  * Description:     This plugin collapses the admin menu and doesn't allow expanding it back.
  * Author:          Felipe Santos
  * Text Domain:     force-collapse-admin-menu
- * Version:         1.0.1
+ * Version:         1.0.2
  *
  * @package         Force Collapse Admin Menu
  */
